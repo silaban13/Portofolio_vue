@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+/* Hero Image Pulse */
+.hero-photo {
+  animation: heroPulse 2.8s ease-in-out infinite;
+}
+
+@keyframes heroPulse {
+
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,.15));
+  }
+
+  50% {
+    transform: scale(1.03);
+    filter: drop-shadow(0 18px 35px rgba(37,99,235,.30));
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,.15));
+  }
+
+}

@@ -1,136 +1,91 @@
-<template>
-  <div v-if="loading" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-gray-100 transition-all duration-700">
-    <h1 class="animate-pulse text-5xl font-light tracking-[6px] text-black">  M | S </h1>
-    <div class="mt-8 h-12 w-12 animate-spin rounded-full border-4 border-gray-300 border-t-black"></div>
-    <div class="mt-8 h-[4px] w-56 overflow-hidden rounded-full bg-gray-300">
-      <div class="loading-bar h-full bg-black"></div>
-    </div>
-    <p class="mt-6 animate-pulse text-sm tracking-[4px] text-gray-600"> LOADING PORTFOLIO </p>
-  </div>
-  <div v-else>
-    <section class="nav">
-      <Disclosure as="nav" class="relative bg-white" v-slot="{ open }">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div class="relative flex h-16 items-center justify-between">
-            <!-- Mobile Button -->
-            <div class="flex items-center sm:hidden">
-              <DisclosureButton class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100">
-                <Bars3Icon v-if="!open" class="block size-6" aria-hidden="true"/>
-                <XMarkIcon v-else class="block size-6" aria-hidden="true"/>
-              </DisclosureButton>
-            </div>
-            <h1 class="relative left-0 text-2xl font-bold text-black sm:left-10 sm:text-3xl lg:left-[80px]"> M | S </h1>
-            <!-- Desktop Menu -->
-            <div class="hidden sm:block">
-              <div class="flex space-x-12">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[ item.current ? 'bg-gray-900 text-red-500 border-blue-500' : 'text-gray-700 border-transparent hover:border-blue-500 hover:text-blue-500', 'rounded-md px-3 py-2 text-2xl font-medium border-b-2 transition duration-200' ]">
-                  {{ item.name }}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div v-if="open" class="fixed inset-0 z-40 flex items-center justify-center bg-black/40 sm:hidden">
-          <DisclosurePanel class="w-80 h-80 bg-white p-6 shadow-2xl">
-            <div class="mb-6 text-center">
-              <h2 class="text-2xl font-bold text-black"> Menu </h2>
-            </div>
-            <div class="flex flex-col space-y-4">
-              <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href" :class="[ item.current ? 'bg-blue-500 text-white' : 'text-gray-700 hover:bg-gray-100', 'rounded-xl px-4 py-3 text-center text-lg font-medium transition duration-200' ]">
-                {{ item.name }}
-              </DisclosureButton>
-            </div>
-          </DisclosurePanel>
-        </div>
-      </Disclosure>
-    </section>
-    <section class="min-h-screen bg-white flex items-center">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="flex flex-col-reverse items-center justify-between gap-16 lg:flex-row">
-          <div class="max-w-2xl">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-900"> Hi, nama saya Mariono Silaban </h1>
-            <p class="mt-6 text-lg leading-relaxed text-gray-600">
-              Saya seorang full-stack web developer yang fokus
-              pada pembuatan website modern, responsif, dan
-              fungsional. Saya memiliki pengalaman menggunakan
-              Node.js untuk membangun backend yang aman dan
-              scalable, serta senang mempelajari teknologi baru
-              dan mengembangkan solusi digital yang bermanfaat.
-            </p>
-            <div class="mt-8 flex flex-wrap gap-4">
-              <button class="rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"> Unduh CV </button>
-              <button class="rounded-xl bg-green-500 px-6 py-3 font-semibold text-white transition hover:bg-green-700" > Hubungi Saya</button>
-            </div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img src="../assets/FOTO.png" alt="My foto" class="h-[390px] w-[320px] object-cover shadow-2xl"/>
-            <div class="mt-6 flex gap-6">
-              <img src="../assets/nodejs.png" alt="Icon NodeJS" class="size-12 transition hover:scale-110"/>
-              <img src="../assets/atom.png" alt="Icon Atom" class="size-12 transition hover:scale-110"/>
-              <img src="../assets/document.png" alt="Icon Vue" class="size-12 transition hover:scale-110"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="px-6 py-16">
-      <div class="sm:ml-10 lg:ml-[130px]">
-        <p class="text-2xl font-bold text-black sm:text-3xl"> Projects </p>
-      </div>
-      <div class="mx-auto mt-5 w-full max-w-[1050px] border-2 border-black"></div>
-      <div class="card mt-10 flex flex-wrap justify-center gap-10 lg:gap-16">
-        <div class="transition duration-300 hover:-translate-y-2">
-          <p class="mb-4 text-lg font-semibold text-black sm:text-xl"> 01 Example Project </p>
-          <img src="../assets/example_satu.png" class="h-[400px] w-[260px] object-cover shadow-lg sm:h-[500px] sm:w-[300px]" alt="Example Project 1">
-        </div>
-        <div class="transition duration-300 hover:-translate-y-2">
-          <p class="mb-4 text-lg font-semibold text-black sm:text-xl"> 02 Example Project </p>
-          <img src="../assets/example_dua.png" class="h-[400px] w-[260px] object-cover shadow-lg sm:h-[500px] sm:w-[300px]" alt="Example Project 2">
-        </div>
-        <div class="transition duration-300 hover:-translate-y-2">
-          <p class="mb-4 text-lg font-semibold text-black sm:text-xl"> 03 Example Project </p>
-          <img src="../assets/example_tiga.png" class="h-[400px] w-[260px] object-cover shadow-lg sm:h-[500px] sm:w-[300px]" alt="Example Project 3">
-        </div>
-      </div>
-    </section>
-  </div>
-</template>
 <script setup>
-  import { ref, onMounted } from 'vue'
-  import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-  import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { onMounted, onBeforeUnmount } from 'vue'
+import Typed from 'typed.js'
 
-  const navigation = [
-    { name: 'Home', href: '#', current: false },
-    { name: 'About', href: '#', current: false },
-    { name: 'Contact', href: '#', current: false },
-  ]
+let typed
 
-  const loading = ref(true)
-  onMounted(() => {
-    setTimeout(() => {
-      loading.value = false
-    }, 2500)
+onMounted(() => {
+  typed = new Typed('#typing', {
+    strings: [
+      'Web Developer',
+      'Front-End Developer',
+      'Full Stack Developer'
+    ],
+    typeSpeed: 70,
+    backSpeed: 40,
+    backDelay: 1500,
+    loop: true
   })
+})
 
+onBeforeUnmount(() => {
+  typed.destroy()
+})
 </script>
-<style>
-  .loading-bar {
-    width: 40%;
-    animation: loading 1.5s infinite ease-in-out;
-  }
 
-  @keyframes loading {
-    0% {
-      transform: translateX(-100%);
-    }
+<template>
+  <section class="min-h-screen flex items-center bg-white dark:bg-[#11131c]" style="padding-top:clamp(7rem,10vw,11rem);">
+    <div class="mx-auto w-full px-5 sm:px-6 lg:px-10 xl:px-16">
+      <div class="flex flex-col-reverse lg:flex-row items-center justify-between" style="gap:clamp(3rem,6vw,6rem);">
+        <div class="w-full lg:w-[55%] xl:w-[58%]">
+          <p class="font-semibold uppercase tracking-[0.3em] text-blue-500" style="font-size:clamp(.75rem,1vw,.95rem);"> Hi, I'm </p>
+        <h1 class="font-black leading-none tracking-[-0.03em] text-gray-900 dark:text-white" style="font-size: clamp(3rem, 5vw, 5rem);"> Mariono Silaban</h1>
+          <h2
+class="font-bold text-blue-600"
+style="font-size:clamp(1.5rem,3vw,2.4rem)"
+><span id="typing"></span> </h2>
+          <p class="text-gray-500 dark:text-gray-400 leading-8 max-w-xl" style="margin-top:clamp(1.5rem,3vw,2rem); font-size:clamp(1rem,1.2vw,1.15rem);">
+            Saya membangun website modern, responsif, dan cepat
+            menggunakan Vue.js, Laravel, Node.js, serta teknologi web
+            terbaru untuk menghasilkan pengalaman pengguna yang
+            profesional dan mudah digunakan.
+          </p>
+          <div class="flex flex-wrap" style="margin-top:clamp(2rem,4vw,3rem); gap:clamp(1rem,2vw,1.5rem);">
+            <a href="#projects" class=" group inline-flex items-center gap-4 rounded-full border border-gray-300 bg-white py-2 pl-7 pr-2 font-semibold transition-all duration-300 hover:bg-blue-600 hover:text-white hover:border-blue-600">
+              <span>View Projects</span>
 
-    50% {
-      transform: translateX(250%);
-    }
+              <span
+class="
+flex
+h-10
+w-10
+items-center
+justify-center
+rounded-full
+bg-blue-600
+text-white
+transition-all   
+duration-300
+group-hover:bg-white
+group-hover:text-blue-600
+"> → </span>
 
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-</style>
+            </a> 
+            <a href="#contact" class="rounded-full border border-gray-300 px-8 py-4 font-semibold text-gray-800 transition hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800"> Contact Me </a>
+          </div>
+        </div>
+        <div class="w-full lg:w-[45%] xl:w-[42%] flex flex-col items-center lg:items-end">
+         <img
+  src="../assets/FOTO.png"
+  alt="Mariono Silaban"
+  class="hero-photo object-cover
+         w-[340px]
+         lg:w-[380px]
+         xl:w-[430px]"
+  style="height: clamp(420px, 42vw, 520px);"
+/>
+          <div class="flex justify-center"
+          style="
+            width:clamp(300px,30vw,430px);
+            margin-top:clamp(1.2rem,2vw,1.8rem);
+            gap:clamp(1rem,2vw,1.5rem);
+          ">
+            <img src="../assets/nodejs.png" class="size-12 transition hover:scale-110" />
+            <img src="../assets/atom.png" class="size-12 transition hover:scale-110" />
+            <img src="../assets/document.png" class="size-12 transition hover:scale-110" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
