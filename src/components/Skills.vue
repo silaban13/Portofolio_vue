@@ -4,7 +4,7 @@
       <h2 class="text-4xl sm:text-5xl font-black tracking-tight text-gray-900 dark:text-white"> Technical Skills </h2>
       <div class="mt-5 h-[2px] w-full bg-black dark:bg-gray-700"></div>
       <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
-        <div class="rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+        <div class="rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 shadow-lg">
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6"> Frontend </h3>
           <ul class="space-y-4">
             <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
@@ -25,7 +25,7 @@
             </li>
           </ul>
         </div>
-        <div class="rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+        <div class="rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 shadow-lg">
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6"> Backend </h3>
           <ul class="space-y-4">
             <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
@@ -46,7 +46,7 @@
             </li>
           </ul>
         </div>
-        <div class="rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+        <div class="rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 shadow-lg">
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6"> Database </h3>
           <ul class="space-y-4">
             <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">
@@ -59,7 +59,7 @@
             </li>
           </ul>
         </div>
-        <div class="rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+        <div class="rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 shadow-lg">
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6"> Tools </h3>
           <ul class="space-y-4">
             <li class="flex items-center gap-3 text-gray-600 dark:text-gray-300">

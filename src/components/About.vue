@@ -28,7 +28,7 @@
             <div>
               <span class="text-sm font-semibold text-orange-500"> 2022 – 2026 </span>
               <h4 class="mt-2 text-xl font-bold text-gray-900 dark:text-white"> Universitas Indraprasta PGRI </h4>
-              <p class="mt-2 text-gray-500 dark:text-gray-400"> Bachelor's Degree in Computer Science </p>
+              <p class="mt-2 text-gray-500 dark:text-gray-400"> 7th Semester Computer Science Student </p>
             </div>
           </div>
         </div>

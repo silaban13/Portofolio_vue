@@ -5,6 +5,7 @@
   import page_tiga from './components/About.vue'
   import page_empat from './components/Contact.vue'
   import Footer from './components/Footer.vue'
+  import whatsappButton from './components/WhatsAppButton.vue'
 </script>
 
 <template>
@@ -16,4 +17,7 @@
     <page_empat/>
     <Footer />
   </div>
+
+  <whatsappButton />
+  
 </template>
