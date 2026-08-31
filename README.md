@@ -10,3 +10,5 @@ Fluid Responsive Design (atau fluid layout), lawannya dari pendekatan breakpoint
 
 horizontal overflow
 
+lebih modular
+
