@@ -1,5 +1,5 @@
 <script setup>
-  import Navbar from './components/Navbar.vue'
+  import Navbar from './components/navigation/TopNavbar.vue'
   import page_satu from './components/Home.vue'
   import page_dua from './components/Skills.vue'
   import page_tiga from './components/About.vue'

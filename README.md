@@ -12,3 +12,4 @@ horizontal overflow
 
 lebih modular
 
+isScrolling
