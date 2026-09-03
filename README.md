@@ -13,3 +13,7 @@ horizontal overflow
 lebih modular
 
 isScrolling
+
+Fluid responsive layout dengan desktop-like layout pada tablet.
+
+Circular Menu Reveal / Circle Clip-Path Reveal

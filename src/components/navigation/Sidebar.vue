@@ -4,8 +4,6 @@
     import skillsIcon from '@/assets/skills.png'
     import contactIcon from '@/assets/contact.png'
     import { ref, onMounted } from 'vue'
-    import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-    import { Bars3Icon, XMarkIcon, EyeIcon } from '@heroicons/vue/24/outline'
     import lightIcon from '@/assets/darker.png'
     import darkIcon from '@/assets/night-mode.png'
 
@@ -96,30 +94,4 @@
             </button>
         </div>
     </aside>
-    <Disclosure as="nav" class="md:hidden fixed top-0 left-0 right-0 z-[100] bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800" v-slot="{ open }">
-        <div class="h-[72px] px-5 flex items-center justify-between">
-            <a href="#home" @click.prevent="scrollToSection('#home')" class="text-xl font-bold text-gray-900 dark:text-white"> Mariono <span class="text-blue-600"> Silaban </span></a>
-            <DisclosureButton class="w-11 h-11 rounded-xl flex items-center justify-center text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition">
-                <Bars3Icon v-if="!open" class="w-6 h-6"/>
-                <XMarkIcon v-else class="w-6 h-6"/>
-            </DisclosureButton>
-        </div>
-        <DisclosurePanel class="absolute top-[72px] left-0 right-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-xl p-5">
-        <div class="space-y-2">
-            <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href" @click.prevent="scrollToSection(item.href)" class="flex items-center gap-4 w-full px-4 py-3 rounded-xl text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-800 hover:text-blue-600 transition">
-                <component :is="item.icon" class="w-5 h-5"/>
-                <span> {{ item.name }} </span>
-            </DisclosureButton>
-            <div class=" border-t border-gray-200 dark:border-gray-800 my-4"/>
-                <button type="button" @click="toggleTheme" class=" flex items-center justify-between w-full px-4 py-3 rounded-xl text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
-                    <span> Tema </span>
-                    <img :src="theme === 'light' ? lightIcon : darkIcon" alt="Theme" class="w-5 h-5"/>
-                </button>
-                <a href="https://drive.google.com/file/d/1Loz49kSbVi8FKDVk6TKmQgUA5RLlcaQ-/preview" target="_blank" rel="noopener noreferrer" class=" mt-3 flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium transition">
-                    <span> Open CV </span>
-                    <EyeIcon class="w-5 h-5" />
-                </a>
-            </div>
-        </DisclosurePanel>
-    </Disclosure>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" class="relative overflow-hidden border-t border-gray-200 bg-gray-50 dark:border-gray-800 dark:bg-[#0d0f16]">
+  <footer id="footer" class="relative overflow-hidden border-t border-gray-200 bg-gray-50 dark:border-gray-800 dark:bg-[#0d0f16] translate-y-40">
     <div class="absolute -top-24 left-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl"></div>
     <div class="relative mx-auto w-full px-5 py-12 sm:px-6 lg:px-10 xl:px-16">
       <div class="flex flex-col items-center justify-between gap-8 border-b border-gray-200 pb-8 dark:border-gray-800 md:flex-row">

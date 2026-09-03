@@ -1,5 +1,5 @@
 <template>
-    <section id="contact" class="py-24 bg-white dark:bg-[#11131c]">
+    <section id="contact" class="py-24 bg-white dark:bg-[#11131c]" style="padding-top:clamp(8rem,12vw,12rem);">
         <div class="mx-auto w-full px-5 sm:px-6 lg:px-10 xl:px-16">
             <h2 class="text-4xl sm:text-5xl font-black tracking-tight text-gray-900 dark:text-white"> Contact Me </h2>
             <div class="mt-5 h-[2px] w-full bg-black dark:bg-gray-700"></div>
