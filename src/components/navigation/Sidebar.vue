@@ -6,6 +6,7 @@
     import { ref, onMounted } from 'vue'
     import lightIcon from '@/assets/darker.png'
     import darkIcon from '@/assets/night-mode.png'
+    import {Disclosure} from '@headlessui/vue'
 
     const navigation = [
         {
@@ -30,6 +31,9 @@
         }
     ]
 
+    const ropePull = ref(0)
+    const isDraggingRope = ref(false)
+    const ropeStartY = ref(0)
     const activeSection = ref('home')
     const theme = ref('light')
     onMounted(() => {
@@ -79,7 +83,30 @@
         }
     }
 
+    function startRopePull(event) {
+        isDraggingRope.value = true
+        ropeStartY.value = event.clientY
+        event.currentTarget.setPointerCapture(event.pointerId)
+    }
+
+    function moveRope(event) {
+        if (!isDraggingRope.value) return
+        const distance = Math.max(0, Math.min(event.clientY - ropeStartY.value, 100))
+        ropePull.value = distance
+    }
+
+    function endRopePull() {
+        if (!isDraggingRope.value) return
+        isDraggingRope.value = false
+        if (ropePull.value >= 45) {
+            toggleTheme()
+        }
+
+        ropePull.value = 0
+    }
+
 </script>
+
 <template>
     <aside class="hidden md:flex fixed left-0 top-1/2 -translate-y-1/2 z-50 w-[58px] h-[360px] bg-[#354155] dark:bg-[#202938] rounded-r-[26px] flex-col items-center justify-center shadow-[5px_0_20px_rgba(0,0,0,0.08)] dark:shadow-[5px_0_20px_rgba(0,0,0,0.25)] transition-all duration-300">
         <nav class="flex flex-col items-center gap-5">
@@ -94,4 +121,12 @@
             </button>
         </div>
     </aside>
+    <Disclosure as="nav" class="md:hidden fixed top-0 left-0 right-0 z-[100] ..." v-slot="{ open }">
+        <div class="mobile-rope" :class="{ 'is-pulling': isDraggingRope }" :style="{ '--rope-pull': `${ropePull}px` }">
+            <div class="rope-handle" @pointerdown="startRopePull" @pointermove="moveRope" @pointerup="endRopePull" @pointercancel="endRopePull">
+                <div class="rope-line"></div>
+                <div class="rope-ring"></div>
+            </div>
+        </div>
+    </Disclosure>
 </template>
