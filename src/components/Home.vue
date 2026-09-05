@@ -32,16 +32,16 @@
     <div class="mx-auto w-full px-6 sm:px-10 md:px-24 lg:px-28 xl:px-36">
       <div class="flex flex-col-reverse md:flex-row items-start justify-between gap-0 lg:gap-[clamp(3rem,6vw,6rem)]">
         <div data-scroll-animation class="scroll-left w-full md:w-[58%] lg:w-[55%] xl:w-[58%] translate-y-[40px] md:translate-y-[35px] lg:translate-y-[45px]"> 
-          <p data-scroll-animation class="scroll-left font-semibold uppercase tracking-[0.3em] text-gray-500 mb-3 text-center md:text-left" style="font-size:clamp(.75rem,1vw,.95rem);"> Hi, I'm </p>
-          <h1 data-scroll-animation class="scroll-left font-black leading-none tracking-[-0.03em] text-gray-900 dark:text-white whitespace-nowrap text-center md:text-left" style="font-size:clamp(2.5rem,5vw,5rem);"> Mariono Silaban </h1>
-          <h2 data-scroll-animation class="scroll-left font-medium text-blue-600 text-center md:text-left" style="font-size:clamp(1.25rem,2.5vw,2rem); margin-top:0.4rem;"> <span id="typing"></span> </h2>
-          <p data-scroll-animation class="scroll-left text-gray-500 dark:text-gray-400 leading-8 max-w-none md:max-w-none lg:max-w-xl text-center md:text-left" style="margin-top:clamp(1.8rem,2.8vw,2.3rem); font-size:clamp(.75rem,1vw,.95rem);">
+          <p data-scroll-animation class="scroll-left scroll-stagger-1  scroll-left font-semibold uppercase tracking-[0.3em] text-gray-500 mb-3 text-center md:text-left" style="font-size:clamp(.75rem,1vw,.95rem);"> Hi, I'm </p>
+          <h1 data-scroll-animation class="scroll-left scroll-stagger-2  scroll-left font-black leading-none tracking-[-0.03em] text-gray-900 dark:text-white whitespace-nowrap text-center md:text-left" style="font-size:clamp(2.5rem,5vw,5rem);"> Mariono Silaban </h1>
+          <h2 data-scroll-animation class="scroll-left scroll-stagger-3  scroll-left font-medium text-blue-600 text-center md:text-left" style="font-size:clamp(1.25rem,2.5vw,2rem); margin-top:0.4rem;"> <span id="typing"></span> </h2>
+          <p data-scroll-animation class="scroll-left scroll-stagger-4  scroll-left text-gray-500 dark:text-gray-400 leading-8 max-w-none md:max-w-none lg:max-w-xl text-center md:text-left" style="margin-top:clamp(1.8rem,2.8vw,2.3rem); font-size:clamp(.75rem,1vw,.95rem);">
             Saya seorang Front-End Developer yang berfokus pada pengembangan website 
             modern, responsif, dan interaktif. Saya merancang dan membangun antarmuka 
             yang fungsional dengan memperhatikan pengalaman pengguna, performa, serta 
             tampilan yang profesional dan mudah digunakan. 
           </p>
-          <div data-scroll-animation class="scroll-left flex flex-row items-center justify-center md:justify-start" style="margin-top:clamp(1.8rem,3vw,2.5rem); gap:clamp(0.7rem,1.5vw,1.5rem);">
+          <div data-scroll-animation class="scroll-left scroll-stagger-5  scroll-left flex flex-row items-center justify-center md:justify-start" style="margin-top:clamp(1.8rem,3vw,2.5rem); gap:clamp(0.7rem,1.5vw,1.5rem);">
             <a href="https://github.com/silaban13" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center rounded-full border border-gray-300 bg-white font-semibold transition-all duration-300 hover:bg-gray-600 hover:text-white hover:border-blue-600" style="gap:clamp(0.5rem,0.8vw,0.75rem); padding-top:clamp(0.35rem,0.5vw,0.375rem); padding-bottom:clamp(0.35rem,0.5vw,0.375rem); padding-left:clamp(1rem,1.8vw,1.5rem); padding-right:clamp(0.35rem,0.5vw,0.375rem); font-size:clamp(0.75rem,1.1vw,0.875rem);">
               <span>View Projects</span>
               <span class="flex items-center justify-center rounded-full bg-gray-600 text-white transition-all duration-300 group-hover:bg-white group-hover:text-blue-600" style=" width:clamp(2rem,3.5vw,2.25rem); height:clamp(2rem,3.5vw,2.25rem);">  → </span>

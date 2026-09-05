@@ -116,8 +116,8 @@
             </a>
         </nav>
         <div class="absolute bottom-5 flex flex-col items-center gap-2">
-            <button type="button" @click="toggleTheme" class=" w-9 h-9 rounded-lg flex items-center justify-center text-white/80 hover:bg-white/10 hover:text-white hover:scale-105 transition-all duration-300" :title="theme === 'light' ? 'Dark Mode' : 'Light Mode'">
-                <img :src="theme === 'light' ? lightIcon : darkIcon" alt="Theme" class="w-4 h-4"/>
+            <button type="button" @click="toggleTheme" class=" w-9 h-9 rounded-lg flex items-center justify-center text-white/80 hover:bg-white/10 hover:text-white hover:scale-105 transition-all duration-300" :title="theme === 'light' ? 'Dark Mode' : 'Light Mode'"> 
+                <img :src="theme === 'light' ? lightIcon : darkIcon" alt="Theme" class="w-5 h-5 object-contain brightness-0 invert transition-all duration-300"/>
             </button>
         </div>
     </aside>

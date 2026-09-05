@@ -21,3 +21,7 @@ Circular Menu Reveal / Circle Clip-Path Reveal
 Slide + Fade + Spring + Stagger
 
 full-page scroll snapping atau full-page section snap.
+
+https://pagespeed.web.dev/ 
+
+https://www.photopea.com/ 

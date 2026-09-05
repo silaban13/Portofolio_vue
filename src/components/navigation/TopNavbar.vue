@@ -32,6 +32,7 @@
 </script>
 
 <template>
+
   <nav class="fixed top-0 left-0 right-0 z-[100] transition-all duration-300" :class="menuOpen ? 'bg-[#354155] border-transparent' : isScrolling ? 'bg-white/80 dark:bg-gray-900/80 border-b border-gray-200/70 dark:border-gray-800/70 shadow-sm' : 'bg-transparent border-transparent'">
     <div class="h-[72px] px-8 sm:px-10 lg:px-14 xl:px-20 flex items-center justify-between">
       <a href="#home" class="inter-logo text-xl font-bold transition-colors duration-300" :class="menuOpen ? 'text-white' : 'text-gray-900 dark:text-white'"> MarionoSilaban </a>
@@ -39,13 +40,13 @@
     </div>
   </nav>
   <Transition name="fullscreen-menu">
-    <div v-if="menuOpen" class="fixed inset-0 z-[90] bg-gray-900/80">
-      <div class="min-h-screen flex flex-col items-center justify-center">
-        <p class="menu-item text-5xl font-bold text-white mb-6" :class="{ 'menu-item-show': menuOpen }" style="--delay: 0.05s"> Menu </p>
-        <a href="#home" @click="menuOpen = false" class="menu-item text-xl font-bold text-white mb-4" :class="{ 'menu-item-show': menuOpen }" style="--delay: 0.15s"> Home </a>
-        <a href="#about" @click="menuOpen = false" class="menu-item text-xl font-bold text-white mb-4" :class="{ 'menu-item-show': menuOpen }" style="--delay: 0.25s" > About </a>
-        <a href="#projects" @click="menuOpen = false" class="menu-item text-xl font-bold text-white mb-4" :class="{ 'menu-item-show': menuOpen }" style="--delay: 0.35s"> Projects </a>
-        <a href="#contact" @click="menuOpen = false" class="menu-item text-xl font-bold text-white mb-4" :class="{ 'menu-item-show': menuOpen }" style="--delay: 0.45s" > Contact </a>
+    <div v-if="menuOpen" class="fixed inset-0 z-[90] bg-gray-900/80 flex items-center justify-center" @click="menuOpen = false">
+        <div class="flex flex-col items-center justify-center" @click.stop>
+          <p class="menu-item text-5xl font-bold text-white mb-6" :class="{ 'menu-item-show': menuOpen }" style="--delay: 0.05s"> Menu </p>
+          <a href="#home" @click="menuOpen = false" class="menu-item text-xl font-bold text-white mb-4" :class="{ 'menu-item-show': menuOpen }" style="--delay: 0.15s"> Home </a>
+          <a href="#about" @click="menuOpen = false" class="menu-item text-xl font-bold text-white mb-4" :class="{ 'menu-item-show': menuOpen }" style="--delay: 0.25s"> About </a>
+          <a href="#skills" @click="menuOpen = false" class="menu-item text-xl font-bold text-white mb-4" :class="{ 'menu-item-show': menuOpen }" style="--delay: 0.35s"> Skills </a>
+          <a href="#contact" @click="menuOpen = false" class="menu-item text-xl font-bold text-white mb-4" :class="{ 'menu-item-show': menuOpen }" style="--delay: 0.45s"> Contact </a>
       </div>
     </div>
   </Transition>
