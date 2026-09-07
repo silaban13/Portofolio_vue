@@ -85,8 +85,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.fullpage-container {
+  scroll-snap-type: y mandatory;
+}
+
 .fullpage-section {
+  height: 100vh;
   min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 @media (max-width: 767.98px) {
@@ -100,6 +107,13 @@ html {
     pointer-events: none;
     transform-origin: top center;
     animation: rope-sway 3s ease-in-out infinite;
+  }
+
+  .fullpage-section {
+    height: 100dvh;
+    min-height: 100dvh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 
   .rope-handle {

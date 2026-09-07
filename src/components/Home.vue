@@ -5,7 +5,6 @@
   import ScrollIndicator from '@/components/ScrollIndicator.vue'
 
   let typed
-
   useScrollAnimation()
 
   onMounted(() => {
@@ -28,6 +27,7 @@
 </script>
 
 <template>
+
   <section id="home" class="fullpage-section  min-h-screen flex items-center bg-white dark:bg-[#11131c] pt-[80px] md:pt-[80px] lg:pt-0">
     <div class="mx-auto w-full px-6 sm:px-10 md:px-24 lg:px-28 xl:px-36">
       <div class="flex flex-col-reverse md:flex-row items-start justify-between gap-0 lg:gap-[clamp(3rem,6vw,6rem)]">
@@ -63,6 +63,7 @@
     </div>
     <ScrollIndicator />
   </section>
+  
 </template>
 
 <style scoped>

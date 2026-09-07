@@ -14,7 +14,8 @@
     "@heroicons/vue": "^2.2.0",
     "aos": "^2.3.4",
     "typed.js": "^3.0.0",
-    "vue": "^3.5.32"
+    "vue": "^3.5.32",
+    "vue-router": "^5.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.6",

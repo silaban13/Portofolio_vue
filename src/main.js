@@ -8,8 +8,10 @@ import '@fontsource/poppins/700.css'
 import '@fontsource/poppins/800.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import router from './components/router/router'
 
 const app = createApp(App)
+app.use(router)
 app.mount('#app')
 
 AOS.init({

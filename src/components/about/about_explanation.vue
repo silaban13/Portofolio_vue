@@ -1,10 +1,16 @@
+<script setup>
+  import Navbar from '../navigation/TopNavbar.vue'
+  import Footer from '../Footer.vue'
+</script>
+
 <template>
-  <section id="about" class="fullpage-section  py-24 bg-white dark:bg-[#11131c]" style="margin-top:clamp(3rem,6vw,6rem);">
+   <Navbar :showSidebar="false" />
+  <section id="about" class="fullpage-section py-24 bg-white dark:bg-[#11131c]">
     <div class="mx-auto w-full px-5 sm:px-6 lg:px-10 xl:px-16">
       <h2 class="text-4xl sm:text-5xl font-black tracking-tight text-gray-900 dark:text-white"> About Me </h2>
       <div class="mt-5 h-[2px] w-full bg-black dark:bg-gray-700"></div>
       <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 items-stretch">
-        <div data-aos="fade-right" class="rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 sm:p-10 xl:p-12 ">
+        <div data-aos="fade-right" class="rounded-3xl border border-gray0 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 sm:p-10 xl:p-12 ">
           <p class="leading-8 text-gray-600 dark:text-gray-300">
             I am a passionate Front-End Developer dedicated to translating
             complex problems into intuitive, elegant, and high-performing
@@ -35,4 +41,5 @@
       </div>
     </div>
   </section>
+  <Footer />
 </template>
