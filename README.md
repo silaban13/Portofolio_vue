@@ -25,3 +25,5 @@ full-page scroll snapping atau full-page section snap.
 https://pagespeed.web.dev/ 
 
 https://www.photopea.com/ 
+
+npm install
