@@ -111,9 +111,10 @@ html {
     animation: rope-sway 3s ease-in-out infinite;
   }
 
+
   .fullpage-section {
-    height: 100dvh;
-    min-height: 100dvh;
+    min-height: auto;
+    height: auto;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }

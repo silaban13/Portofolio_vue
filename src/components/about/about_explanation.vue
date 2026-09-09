@@ -4,11 +4,11 @@
 </script>
 
 <template>
-   <Navbar :showSidebar="false" />
-  <section id="about" class="fullpage-section py-24 bg-white dark:bg-[#11131c]">
+  <Navbar :showSidebar="false" />
+  <section id="about" class="min-h-screen bg-white dark:bg-[#11131c] py-24">
     <div class="mx-auto w-full px-5 sm:px-6 lg:px-10 xl:px-16">
       <h2 class="text-4xl sm:text-5xl font-black tracking-tight text-gray-900 dark:text-white"> About Me </h2>
-      <div class="mt-5 h-[2px] w-full bg-black dark:bg-gray-700"></div>
+      <div class="mt-5 h-[2px] w-[75%] sm:w-[80%] md:w-[85%] lg:w-[90%] bg-black dark:bg-gray-700"></div>
       <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 items-stretch">
         <div data-aos="fade-right" class="rounded-3xl border border-gray0 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 sm:p-10 xl:p-12 ">
           <p class="leading-8 text-gray-600 dark:text-gray-300">
@@ -39,6 +39,12 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="mt-12 flex justify-center">
+      <RouterLink to="/" class="inline-flex items-center gap-3 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-800 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-gray-900 hover:text-white dark:border-gray-700 dark:bg-[#1b1e28] dark:text-white dark:hover:bg-white dark:hover:text-gray-900">
+        <span class="text-lg">←</span>
+        <span>Kembali ke Halaman Utama</span>
+      </RouterLink>
     </div>
   </section>
   <Footer />

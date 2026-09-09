@@ -14,13 +14,13 @@
             Front-End Developer yang berfokus pada pengembangan website modern,
             responsif, dan interaktif.
           </p>
-          <RouterLink to="/about-explanation"  class="inline-flex items-center rounded-full border border-gray-300 bg-white font-semibold text-gray-800 transition-all duration-300 hover:bg-gray-800 hover:text-white dark:border-gray-700 dark:bg-transparent dark:text-white dark:hover:bg-white dark:hover:text-gray-900" style="margin-top:clamp(1.8rem,3vw,2.5rem); gap:clamp(0.5rem,0.8vw,0.75rem); padding-top:clamp(0.35rem,0.5vw,0.375rem); padding-bottom:clamp(0.35rem,0.5vw,0.375rem); padding-left:clamp(1rem,1.8vw,1.5rem); padding-right:clamp(0.35rem,0.5vw,0.375rem); font-size:clamp(0.75rem,1.1vw,0.875rem);">
+          <RouterLink to="/about-explanation" class="self-center md:self-start inline-flex items-center rounded-full border border-gray-300 bg-white font-semibold text-gray-800 transition-all duration-300 hover:bg-gray-800 hover:text-white dark:border-gray-700 dark:bg-transparent dark:text-white dark:hover:bg-white dark:hover:text-gray-900" style="margin-top:clamp(1.8rem,3vw,2.5rem); gap:clamp(0.5rem,0.8vw,0.75rem); padding-top:clamp(0.35rem,0.5vw,0.375rem); padding-bottom:clamp(0.35rem,0.5vw,0.375rem); padding-left:clamp(1rem,1.8vw,1.5rem); padding-right:clamp(0.35rem,0.5vw,0.375rem); font-size:clamp(0.75rem,1.1vw,0.875rem);">
             <span>Baca Selengkapnya</span>
             <span class="flex items-center justify-center rounded-full bg-gray-600 text-white" style="width:clamp(2rem,3.5vw,2.25rem); height:clamp(2rem,3.5vw,2.25rem);"> → </span>
           </RouterLink>
         </div>
         <div class="w-full md:w-[42%] lg:w-[45%] xl:w-[42%] flex justify-center items-center">
-          <img src="/src/assets/FOTO_tiga.jpeg" alt="Mariono Silaban" class="object-cover w-[195px] sm:w-[200px] md:w-[180px] lg:w-[220px] xl:w-[240px] h-[195px] sm:h-[200px] md:h-[250px] lg:h-[300px] xl:h-[320px] shadow-sm" />
+          <img data-scroll-animation class="scroll-right scroll-stagger-2 object-cover w-[195px] sm:w-[200px] md:w-[180px] lg:w-[220px] xl:w-[240px] h-[195px] sm:h-[200px] md:h-[250px] lg:h-[300px] xl:h-[320px] shadow-sm" src="/src/assets/FOTO_tiga.jpeg" alt="Mariono Silaban"/>
         </div>
       </div>
     </div>
