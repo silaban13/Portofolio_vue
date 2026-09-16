@@ -14,7 +14,7 @@
             Front-End Developer yang berfokus pada pengembangan website modern,
             responsif, dan interaktif.
           </p>
-          <RouterLink to="/about-explanation" class="self-center md:self-start inline-flex items-center rounded-full border border-gray-300 bg-white font-semibold text-gray-800 transition-all duration-300 hover:bg-gray-800 hover:text-white dark:border-gray-700 dark:bg-transparent dark:text-white dark:hover:bg-white dark:hover:text-gray-900" style="margin-top:clamp(1.8rem,3vw,2.5rem); gap:clamp(0.5rem,0.8vw,0.75rem); padding-top:clamp(0.35rem,0.5vw,0.375rem); padding-bottom:clamp(0.35rem,0.5vw,0.375rem); padding-left:clamp(1rem,1.8vw,1.5rem); padding-right:clamp(0.35rem,0.5vw,0.375rem); font-size:clamp(0.75rem,1.1vw,0.875rem);">
+          <RouterLink :to="{ path: '/about-explanation', hash: '#about-title' }" class="self-center md:self-start inline-flex items-center rounded-full border border-gray-300 bg-white font-semibold text-gray-800 transition-all duration-300 hover:bg-gray-800 hover:text-white dark:border-gray-700 dark:bg-transparent dark:text-white dark:hover:bg-white dark:hover:text-gray-900" style="margin-top:clamp(1.8rem,3vw,2.5rem); gap:clamp(0.5rem,0.8vw,0.75rem); padding-top:clamp(0.35rem,0.5vw,0.375rem); padding-bottom:clamp(0.35rem,0.5vw,0.375rem); padding-left:clamp(1rem,1.8vw,1.5rem); padding-right:clamp(0.35rem,0.5vw,0.375rem); font-size:clamp(0.75rem,1.1vw,0.875rem);">
             <span>Baca Selengkapnya</span>
             <span class="flex items-center justify-center rounded-full bg-gray-600 text-white" style="width:clamp(2rem,3.5vw,2.25rem); height:clamp(2rem,3.5vw,2.25rem);"> → </span>
           </RouterLink>
