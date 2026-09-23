@@ -4,22 +4,22 @@
 </script>
 
 <template>
-  <Navbar :showSidebar="false" />
+  <Navbar :showSidebar="false"/>
   <section id="about" class="min-h-screen bg-white dark:bg-[#11131c] py-24">
-    <div class="mx-auto w-full px-5 sm:px-6 lg:px-10 xl:px-16">
+    <div class="mx-auto w-full px-2 sm:px-6 lg:px-10 xl:px-16">
       <h2 id="about-title" class="text-4xl sm:text-5xl font-black tracking-tight text-gray-900 dark:text-white"> About Me </h2>
       <div class="about-title-line mt-5 h-[2px] w-[75%] sm:w-[80%] md:w-[85%] lg:w-[90%] bg-black dark:bg-gray-700"></div>
       <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 items-stretch">
-        <div data-aos="fade-right" class="rounded-3xl border border-gray0 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 sm:p-10 xl:p-12 ">
-          <p class="leading-8 text-gray-600 dark:text-gray-300">
+        <div class="w-full rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 sm:p-10 xl:p-12">
+          <p class="scroll-left scroll-stagger-4 text-gray-500 dark:text-gray-400 leading-8 max-w-none md:max-w-none lg:max-w-xl text-center md:text-left" style="margin-top:clamp(1.8rem,2.8vw,2.3rem); font-size:clamp(.75rem,1vw,.95rem);">
             Saya merupakan mahasiswa Teknik Informatika yang memiliki minat pada bidang Front-End Development.
             Saya memiliki pengalaman mengembangkan aplikasi web menggunakan HTML, CSS, JavaScript, Vue.js, Laravel, dan MySQL.
           </p>
-          <p class="mt-8 leading-8 text-gray-600 dark:text-gray-300">
+          <p class="scroll-left scroll-stagger-4 text-gray-500 dark:text-gray-400 leading-8 max-w-none md:max-w-none lg:max-w-xl text-center md:text-left" style="margin-top:clamp(1.8rem,2.8vw,2.3rem); font-size:clamp(.75rem,1vw,.95rem);">
             Saya juga memiliki pengalaman sebagai Web Developer Intern, dengan mengembangkan website company profile berbasis CMS menggunakan Vue.js sebagai frontend dan Laravel sebagai backend.
             Selain itu, saya mengembangkan beberapa project pribadi untuk memahami konsep CRUD, REST API, MVC, serta pengelolaan data menggunakan database.
           </p>
-          <p class="mt-8 leading-8 text-gray-600 dark:text-gray-300">
+          <p class="scroll-left scroll-stagger-4 text-gray-500 dark:text-gray-400 leading-8 max-w-none md:max-w-none lg:max-w-xl text-center md:text-left" style="margin-top:clamp(1.8rem,2.8vw,2.3rem); font-size:clamp(.75rem,1vw,.95rem);">
             Saat ini saya terus mengembangkan kemampuan terutama dalam JavaScript dan pengembangan aplikasi web, serta terbiasa belajar, bekerja sama dalam tim, dan menyelesaikan masalah dalam proses pengembangan.
           </p>
         </div>
@@ -56,6 +56,59 @@
         </div>
       </div>
     </div>
+    <section class="mt-16 w-full sm:w-[80%] md:w-[85%] lg:w-[90%] mx-auto">
+      <h3 class="text-2xl font-bold text-gray-900 dark:text-white"> Pengalaman Kerja & Proyek </h3>
+      <div class="mt-6 w-full rounded-3xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-[#1b1e28] p-8 sm:p-10 xl:p-12">
+        <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+          <div>
+            <h4 class="text-xl font-bold text-gray-900 dark:text-white"> Web Developer Intern </h4>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400"> CV Cendekia Inspirasi Karya </p>
+          </div>
+          <span class="inline-flex w-fit rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-3 py-1.5 text-xs font-medium text-gray-500 dark:text-gray-400"> Februari 2026 – Maret 2026 </span>
+        </div>
+        <div class="my-6 border-t border-gray-200 dark:border-gray-700"></div>
+        <ul class="space-y-4 text-sm leading-7 text-gray-600 dark:text-gray-400">
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-600"></span>
+            <span> Mengembangkan website <em>company profile</em> interaktif berbasis sistem CMS kustom yang fleksibel untuk kebutuhan konten tim internal. </span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-600"></span>
+            <span>
+              Mengimplementasikan
+              <strong class="font-semibold text-gray-800 dark:text-gray-200"> Vue.js </strong>
+              di sisi front-end dengan komponen reaktif dan menghubungkannya ke
+              <strong class="font-semibold text-gray-800 dark:text-gray-200"> Laravel </strong>
+              sebagai backend RESTful API yang aman.
+            </span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-600"></span>
+            <span>
+              Membangun modul autentikasi lengkap (registrasi, login
+              terproteksi Bearer token/Sanctum, otorisasi peran, dan dashboard
+              admin berkinerja tinggi).
+            </span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-600"></span>
+            <span>
+              Mengimplementasikan fungsionalitas CRUD dinamis untuk pengelolaan
+              artikel berita, arsip berkas, galeri media gambar, dan katalog
+              profil layanan perusahaan.
+            </span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-600"></span>
+            <span>
+              Manajemen basis data relasional menggunakan
+              <strong class="font-semibold text-gray-800 dark:text-gray-200"> MySQL </strong>
+              terindeks dengan skema teroptimasi untuk query cepat.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
     <div class="mt-12 flex justify-center">
       <RouterLink to="/" class="inline-flex items-center gap-3 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-800 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-gray-900 hover:text-white dark:border-gray-700 dark:bg-[#1b1e28] dark:text-white dark:hover:bg-white dark:hover:text-gray-900">
         <span class="text-lg">←</span>
